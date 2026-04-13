@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mairie de Saint-Exemple — Site de demonstration</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; color: #333; background: #f9fafb; }
+    header { background: #0055A4; color: #fff; padding: 1rem 2rem; }
+    header h1 { font-size: 1.25rem; }
+    main { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 1rem; color: #0055A4; }
+    p { line-height: 1.7; margin-bottom: 1rem; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+    .card h3 { margin-bottom: 0.5rem; }
+    .info { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .info .card { flex: 1; min-width: 200px; }
+    code { background: #f3f4f6; padding: 0.75rem 1rem; border-radius: 8px; display: block; font-size: 0.85rem; margin: 1rem 0; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mairie de Saint-Exemple</h1>
+  </header>
+
+  <main>
+    <h2>Bienvenue a Saint-Exemple</h2>
+    <p>Commune de 1 200 habitants situee en Ile-de-France.</p>
+
+    <div class="info">
+      <div class="card">
+        <h3>Horaires</h3>
+        <p>Lundi - Vendredi : 9h - 12h / 14h - 17h<br>Samedi : 9h - 12h</p>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p>01 23 45 67 89<br>contact@saint-exemple.fr</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Integration du widget MairIA</h3>
+      <p>Le chatbot en bas a droite a ete ajoute avec une seule ligne de code :</p>
+      <code>&lt;script src="http://localhost:3000/embed.js" data-tenant-id="VOTRE_TENANT_ID"&gt;&lt;/script&gt;</code>
+      <p>Remplacez <strong>VOTRE_TENANT_ID</strong> par l'UUID de votre mairie (fourni lors de l'inscription).</p>
+    </div>
+  </main>
+
+  <!-- MairIA Widget — 1 ligne a ajouter -->
+  <script src="http://localhost:3000/embed.js"
+          data-tenant-id="REMPLACER_PAR_VOTRE_TENANT_ID"
+          data-color="#0055A4"></script>
+</body>
+</html>
